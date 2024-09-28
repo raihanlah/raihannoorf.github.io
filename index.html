@@ -1,0 +1,183 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <style>
+        /* Gaya umum untuk seluruh halaman */
+body {
+    background-color: #f4f4f9;  /* Light Gray */
+    font-family: 'Arial', sans-serif;  /* Font utama */
+    color: #333333;  /* Dark Gray untuk teks */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;  /* Slate Gray untuk kontras */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Gaya untuk Heading H1 */
+h1 {
+    font-family: 'Helvetica', sans-serif;  /* Font untuk heading */
+    font-size: 36px;
+    margin: 0;
+    color: #ff6f61;  /* Light Coral untuk menonjolkan heading */
+}
+
+/* Gaya untuk Heading H2 */
+h2 {
+    color: #2c3e50;  /* Slate Gray */
+    font-size: 28px;
+    text-align: center;
+}
+
+/* Gaya untuk Heading H3 */
+h3 {
+    font-size: 22px;
+    color: #3498db;  /* Soft Blue */
+    text-align: left;
+    margin-left: 20px;
+}
+
+/* Gaya untuk teks paragraf */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 20px;
+}
+
+/* Link */
+a {
+    color: #3498db;  /* Soft Blue untuk link */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Gambar (tengah dan responsif) */
+img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;  /* Slate Gray */
+    color: white;
+    text-align: center;
+    padding: 1px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+#datetime {
+    font-size: 14px;
+}
+/* Tombol Media Sosial */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.social-btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+/* Tombol Instagram */
+.instagram {
+    background-color: #E1306C;
+}
+
+.instagram:hover {
+    background-color: #C13584;
+}
+
+/* Tombol Twitter */
+.twitter {
+    background-color: #1DA1F2;
+}
+
+.twitter:hover {
+    background-color: #0D95E8;
+}
+
+/* Tombol LinkedIn */
+.linkedin {
+    background-color: #0077B5;
+}
+
+.linkedin:hover {
+    background-color: #005582;
+}
+
+    </style>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon-16x16.png" type="image/png">
+
+    <!-- Link ke external CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header dengan H1 -->
+    <header>
+        <h1>Raihan Noor Fadhlurrahman</h1>
+    </header>
+
+    <!-- Section untuk About Me dengan H2 -->
+    <section>
+        <h2>1202220085</h2>
+        <!-- Menampilkan gambar -->
+        <img src="favicon-16x16.png" alt="Profile Picture" width="200" height="200">
+        <p>S1 Sistem Informasi
+
+    <!-- Section dengan H3 dan link -->
+    <section>
+        <h3>kontak saya
+                <!-- Section dengan H3 dan link -->
+    <section>
+        <h3>Kontak saya</h3>
+        <p>anda bisa menghubungi saya lewat: <a href="raihannoor23@gmail.com">raihannoor23@gmail.com</a></p>
+
+        <!-- Tombol Media Sosial -->
+        <div class="social-buttons">
+            <a href="https://www.instagram.com/raihan_lah_/" target="_blank" class="social-btn instagram">Instagram</a>
+            <a href="https://x.com/Raihannfadh1?s=09" target="_blank" class="social-btn twitter">X</a>
+            <a href="https://www.linkedin.com/in/raihan-noor-fadhlurrahman-b48100282/" target="_blank" class="social-btn linkedin">LinkedIn</a>
+        </div>
+    </section>
+        </h3>
+        <p>ini email saya: <a href="raihannoor23@gmail.com">raihannoor23@gmail.com</a></p>
+    </section>
+
+    <!-- Footer untuk menampilkan waktu dan tanggal -->
+    <footer>
+        <p id="datetime"></p>
+    </footer>
+
+    <!-- JavaScript untuk menampilkan tanggal dan waktu -->
+    <script>
+        var dt = new Date();
+        document.getElementById("datetime").innerHTML = dt.toLocaleString();
+    </script>
+</body>
+</html>
